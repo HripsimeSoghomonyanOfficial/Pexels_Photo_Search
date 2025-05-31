@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pexels Photo Search</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Pexels Photo Search</h1>
+
+    <form id="searchForm">
+  <input type="text" id="searchInput" placeholder="Search photos..." required />
+  <button type="submit">Search</button>
+</form>
+
+<div id="filters" >
+  <select id="orientationFilter">
+    <option value="">Any Orientation</option>
+    <option value="landscape">Landscape</option>
+    <option value="portrait">Portrait</option>
+    <option value="square">Square</option>
+  </select>
+
+  <select id="minHeightFilter"></select>
+
+  <select id="avgColorFilter"></select>
+</div>
+
+<div id="results"></div>
+
+<h3>Favorites</h3>
+<div id="favorites" ></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
